@@ -37,6 +37,7 @@ class OmegleBot{
         if( this.setInterval_id != null ) return;
         let i = this.text_array.length + 3;
         this.setInterval_id = window.setInterval(()=>{this.next();this.chat();}, i * this.interval );
+        this.next();
         this.chat();
     }
 
